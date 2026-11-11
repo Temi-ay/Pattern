@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Pattern Design</h1>
+        </header>
+        <div class="control">
+            <label> Columns: 
+                <input type="number" id="cols" min="4" max="25" value="10">
+            </label>
+            <label> Rows: 
+                <input type="number" id="rows" min="4" max="25" value="10">
+            </label>
+            <button id="generate">Generate</button>
+        </div>
+        <div id="palette">
+            <button class="color" data-color="#000000" title="Black"></button>
+            <button class="color" data-color="#FFFFFF" title="White"></button>
+            <button class="color" data-color="#FF0000" title="Red"></button>
+            <button class="color" data-color="#00FF00" title="Green"></button>
+            <button class="color" data-color="#0000FF" title="Blue"></button>
+            <button class="color" data-color="#FFFF00" title="Yellow"></button>
+            <button class="color" data-color="#FFA500" title="Orange"></button>
+            <button class="color" data-color="#f8f4e9" title="Eraser" aria-label="Eraser"></button>
+            <input type="color" id="customColor" title="Custom Color">
+        </div>
+        <div id="grid"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
