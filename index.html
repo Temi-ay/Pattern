@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pattern Design</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;600&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -19,6 +22,7 @@
                 <input type="number" id="rows" min="4" max="25" value="10">
             </label>
             <button id="generate">Generate</button>
+            <label><input type="checkbox" id="mirror"> Mirror</label>
         </div>
         <div id="palette">
             <button class="color" data-color="#000000" title="Black"></button>
@@ -30,6 +34,12 @@
             <button class="color" data-color="#FFA500" title="Orange"></button>
             <button class="color" data-color="#f8f4e9" title="Eraser" aria-label="Eraser"></button>
             <input type="color" id="customColor" title="Custom Color">
+        </div>
+        <div class="row-controls">
+            <button id="prevRow">Previous</button>
+            <span id="rowStatus">Row 1 of 10</span>
+            <button id="nextRow">Next</button>
+            <button id="exportPng">Download PNG</button>
         </div>
         <div id="grid"></div>
     </main>
